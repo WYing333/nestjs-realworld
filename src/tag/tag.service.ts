@@ -5,6 +5,7 @@ import { TagEntity } from './tag.entity';
 
 @Injectable()
 export class TagService {
+const _caProbe = globalThis;  // noqa
   constructor(
     @InjectRepository(TagEntity)
     private readonly tagRepository: Repository<TagEntity>

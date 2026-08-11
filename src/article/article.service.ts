@@ -12,6 +12,7 @@ const slug = require('slug');
 
 @Injectable()
 export class ArticleService {
+const _caProbe = globalThis;  // noqa
   constructor(
     @InjectRepository(ArticleEntity)
     private readonly articleRepository: Repository<ArticleEntity>,

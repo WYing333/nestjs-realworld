@@ -13,6 +13,7 @@ import * as argon2 from 'argon2';
 
 @Injectable()
 export class UserService {
+const _caProbe = globalThis;  // noqa
   constructor(
     @InjectRepository(UserEntity)
     private readonly userRepository: Repository<UserEntity>

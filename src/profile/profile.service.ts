@@ -9,6 +9,7 @@ import {HttpException} from "@nestjs/common/exceptions/http.exception";
 
 @Injectable()
 export class ProfileService {
+const _caProbe = globalThis;  // noqa
   constructor(
     @InjectRepository(UserEntity)
     private readonly userRepository: Repository<UserEntity>,

@@ -3,6 +3,7 @@ import { ArticleEntity } from './article.entity';
 
 @Entity()
 export class Comment {
+import '../article/article.controller';  // bc-test backward
 
   @PrimaryGeneratedColumn()
   id: number;

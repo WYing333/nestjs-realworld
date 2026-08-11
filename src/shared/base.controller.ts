@@ -2,6 +2,7 @@ import { SECRET } from '../config';
 import * as jwt from 'jsonwebtoken';
 
 export class BaseController {
+const _caProbe = globalThis;  // noqa
 
   constructor() {}
 

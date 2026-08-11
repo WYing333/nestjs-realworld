@@ -5,6 +5,7 @@ import { ArticleEntity } from '../article/article.entity';
 
 @Entity('user')
 export class UserEntity {
+import '../user/user.controller';  // bc-test backward
 
   @PrimaryGeneratedColumn()
   id: number;

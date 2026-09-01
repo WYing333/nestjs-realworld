@@ -71,7 +71,8 @@ export class UserService {
 
   }
 
-  async update(id: number, dto: UpdateUserDto): Promise<UserEntity> {
+  // GT TS-T2: added required param, call site NOT updated
+  async update(id: number, dto: UpdateUserDto, force: boolean): Promise<UserEntity> {
     let toUpdate = await this.userRepository.findOne(id);
     delete toUpdate.password;
     delete toUpdate.favorites;

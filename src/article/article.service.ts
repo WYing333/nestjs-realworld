@@ -24,6 +24,7 @@ export class ArticleService {
   ) {}
 
   async findAll(query): Promise<ArticlesRO> {
+    // GT TS-T3: modify findAll body (has callers) -> T3 blast radius
 
     const qb = await getRepository(ArticleEntity)
       .createQueryBuilder('article')

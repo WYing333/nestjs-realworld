@@ -95,7 +95,8 @@ export class UserService {
     return this.buildUserRO(user);
   }
 
-  async findByEmail(email: string): Promise<UserRO>{
+  // GT TS-T1: renamed, caller (user.controller) NOT updated
+  async findByEmailV2(email: string): Promise<UserRO>{
     const user = await this.userRepository.findOne({email: email});
     return this.buildUserRO(user);
   }

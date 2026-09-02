@@ -125,4 +125,9 @@ export class UserService {
 
     return {user: userRO};
   }
+
+  // GT: self-contained new method (no caller/removal) -> tiers 0
+  gtSelfContained(x: string): string {
+    return x.trim();
+  }
 }

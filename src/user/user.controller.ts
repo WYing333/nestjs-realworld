@@ -52,4 +52,8 @@ export class UserController {
     const user = {email, token, username, bio, image};
     return {user}
   }
+
+  static auditTag(): string {
+    return 'user-audit';
+  }
 }
